@@ -65,7 +65,7 @@
             display: none;
         }
 
-    
+
         #header-bar {
             display: flex;
             justify-content: space-between;
@@ -75,11 +75,11 @@
             top: 0;
             left: 0;
             background-color: #000000;
-           
+
             padding: 10px;
-      
+
             z-index: 1000;
-      
+
         }
 
         .alert {
@@ -119,13 +119,13 @@
         <div class="col">
             <div class="row">
 
-                <img src="vertoca.png" alt="VerToca">
+                <img src="logo.png" alt="">
             </div>
             <div class="row">
                 <h1>INSTRUCCIONES</h1>
-                <p>Tocá las imágenes para sumar puntos, pero cuidado, hay imágenes que restan un punto.</p>
-                <p>Tenes 15 segundos para conseguir más de 5 puntos para ganar.</p>
-                <br>
+                <p>AYUDÁ AL MALABARISTA A JUNTAR SUS PELOTAS.</p> <p>¡OJO! HAY PELOTAS QUE PINCHAN.</p>
+                <p>TENES 15 SEGUNDOS PARA CONSEGUIR MÁS DE 5 PUNTOS PARA GANAR.</p>
+            </br>
                 <button id="start-btn">JUGAR</button>
             </div>
         </div>
@@ -213,7 +213,7 @@
                 imagesShown.add(imageType); // Añadir imagen a las mostradas
 
                 const img = document.createElement('img');
-                img.src = `./${imageType}.png`;
+                img.src = `./${imageType}.jpg`;
                 img.alt = `Imagen ${imageType}`;
                 img.style.top = `${getRandomInt(0, imageContainer.clientHeight - 100)}px`;
                 img.style.left = `${getRandomInt(0, imageContainer.clientWidth - 100)}px`;
